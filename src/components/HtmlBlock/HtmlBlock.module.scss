@@ -1,0 +1,141 @@
+.htmlBlock {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-brand-blue font-normal;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  p {
+    @apply text-p2;
+
+    // a {
+    //   @apply text-brand-black;
+    // }
+    strong {
+      @apply text-white font-medium;
+    }
+
+  }
+
+  strong {
+    @apply text-white font-medium;
+    // a {
+    //   @apply text-white;
+    // }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  li {
+    @apply mb-4;
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  ul {
+    @apply pl-5 mb-8;
+    list-style-image: url('https://nrwib-health.3lanemarketing.com/wp-content/uploads/2024/08/Vector-2.png');
+
+    li {
+      @apply pl-2;
+
+      strong {
+        @apply text-black font-medium;
+      }
+    }
+  }
+
+  ol {
+    @apply list-decimal pl-12 mb-12;
+
+    li {
+      @apply mb-6;
+
+      &:last-child {
+        @apply mb-0;
+      }
+    }
+  }
+
+  a {
+    @apply underline;
+
+    &:has(> strong) {
+      @apply text-black;
+    }
+  }
+
+  figure {
+    @apply relative mb-6;
+    width: 100% !important;
+
+    img {
+      @apply w-full;
+    }
+
+    figcaption {
+      @apply absolute right-8 bottom-8 text-base font-light;
+    }
+  }
+
+  iframe {
+    @apply w-full h-auto;
+    aspect-ratio: 16 / 9;
+  }
+
+
+  ul li ul li {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    list-style-image: none !important;
+    position: relative;
+    padding-left: 1.5rem;
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-top: 0.625rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 100%;
+      left: 0;
+      background-color: #444444
+    }
+  }
+
+  p +,  ol +, ul + {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    ol,
+    ul {
+      @apply mt-12;
+    }
+  }
+}

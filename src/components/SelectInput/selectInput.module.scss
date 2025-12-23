@@ -1,0 +1,41 @@
+.buttonText {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "PBS Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.scrollSelectDropdown {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.scrollSelectDropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollSelectDropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 0 18px;
+}
+
+.scrollSelectDropdown::-webkit-scrollbar-thumb {
+  background-color: #011c2f;
+  border-radius: 50px;
+}
+
+.dropdownStyles {
+  border-radius: 4px;
+  border: 1px solid #f5f7fa;
+
+  background: var(--color-white, #fff);
+  /* Shadow/6px */
+  box-shadow: 0px 6px 12px 0px rgba(171, 190, 209, 0.3);
+}

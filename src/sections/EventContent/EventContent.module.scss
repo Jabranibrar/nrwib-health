@@ -1,0 +1,19 @@
+.homeSectionMargin {
+  @media (min-width: 1375px) {
+    padding-left: calc(50vw - 620px);
+  }
+  @media (min-width: 1351px) and (max-width: 1374px) {
+    padding-left: 3.5rem;
+  }
+  @media (min-width: 1300px) and (max-width: 1350px) {
+    padding-left: 4rem;
+  }
+  @media (min-width: 1024px) and (max-width: 1299px) {
+    padding-left: 2.5rem;
+  }
+}
+.buttonStyle {
+  @media (min-width: 1024px) and (max-width: 1299px) {
+    padding-left: 1rem;
+  }
+}

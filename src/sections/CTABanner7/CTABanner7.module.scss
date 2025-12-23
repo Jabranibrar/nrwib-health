@@ -1,0 +1,39 @@
+
+.bgImage {
+  background-image: url('https://nrwib-health.3lanemarketing.com/wp-content/uploads/2024/08/Group-1261152136.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imageContainer {
+  width: 100%;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    max-width: 27.1rem;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    max-width: 33.5rem;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    max-width: 33.9rem;
+  }
+
+  @media (min-width: 1300px) and (max-width: 1324px) {
+    max-width: 34.8rem;
+  }
+
+  @media (min-width: 1324px) and (max-width: 1350px) {
+    max-width: 35.8rem;
+  }
+
+  @media (min-width: 1350px) and (max-width: 1375px) {
+    max-width: 36.8rem;
+  }
+
+  @media (min-width: 1375px) {
+    max-width: 35%
+  }
+}

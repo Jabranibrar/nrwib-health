@@ -1,0 +1,13 @@
+.gridCols {
+  grid-template-columns: repeat(2, minmax(0, max-content));
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, minmax(0, max-content));
+  }
+}
+
+.cardWrapper {
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+}

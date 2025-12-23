@@ -1,0 +1,14 @@
+.cardStyle {
+  @media (min-width: 1090px) {
+    width: 32%;
+  }
+  @media (min-width: 1024px) and (max-width: 1089px) {
+    width: 31%;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 45%;
+  }
+  @media (min-width: 640px) and (max-width:767px) {
+    width: 46%;
+  }
+}

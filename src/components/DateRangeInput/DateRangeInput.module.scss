@@ -1,0 +1,69 @@
+.customDatePicker {
+  @apply relative;
+  > div {
+    @apply w-full;
+  }
+  :global(.DateRangePickerInput) {
+    @apply bg-transparent border-0 rounded-none w-full flex border-b-2 border-brand-royal-blue place-items-center;
+    :global(.DateInput) {
+      @apply w-28 bg-transparent;
+      input {
+        @apply bg-transparent block py-2 px-0 text-white placeholder:text-white w-full border-0 outline-0 text-xl font-normal;
+      }
+    }
+    :global(.DateRangePickerInput_arrow) {
+      @apply text-white relative mr-1;
+      svg {
+        @apply fill-white;
+      }
+    }
+    :global(.CalendarMonth_caption) {
+      @apply text-xl;
+      select {
+        @apply border p-1;
+      }
+      > div {
+        div {
+          @apply pl-2 pr-2;
+        }
+      }
+    }
+    :global(.DayPickerNavigation_button) {
+      @apply border p-1 rounded-none hidden;
+      height: 31px;
+      top: 22px;
+    }
+    :global(.CalendarDay__selected),
+    :global(.CalendarDay__selected_span) {
+      @apply bg-brand-royal-blue border-brand-royal-blue;
+    }
+    :global(.CalendarDay__hovered_span),
+    :global(.CalendarDay__hovered_span:hover) {
+      @apply bg-brand-royal-blue border-brand-royal-blue text-white opacity-75;
+    }
+    :global(.DateRangePicker_picker) {
+      @apply z-50;
+    }
+    :global(.DayPicker_transitionContainer) {
+      height: 328px !important;
+    }
+    :global(.DateRangePickerInput_clearDates),
+    :global(.DateRangePickerInput_calendarIcon) {
+      @apply p-0;
+      background: transparent !important;
+    }
+    :global(.DateRangePickerInput_calendarIcon) {
+      @apply absolute right-0 top-3;
+    }
+    :global(.DateRangePickerInput_clearDates) {
+      @apply right-4;
+    }
+    :global(.DateRangePickerInput_clearDates_svg),
+    :global(.DateRangePickerInput_calendarIcon_svg) {
+      fill: #fff;
+    }
+    :global(.DateInput_fang) {
+      margin-top: 1px;
+    }
+  }
+}

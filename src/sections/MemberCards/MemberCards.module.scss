@@ -1,0 +1,80 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex: 1 1 auto;
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gridBox {
+  grid-column: span 2;
+}
+
+/* Adjusting grid for max-width 1024px */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .gridBox:last-child:nth-child(2n - 1) {
+    grid-column-end: -2;
+  }
+
+  .gridBox:nth-last-child(2):nth-child(2n + 1) {
+    grid-column-end: 4;
+  }
+
+  /* Dealing with single orphan */
+  .gridBox:last-child:nth-child(2n - 2) {
+    grid-column-end: 5;
+  }
+}
+
+/* Adjusting grid for max-width 640px */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .gridBox {
+    grid-column: span 1;
+  }
+}
+
+/* Dealing with 2 orphan items */
+@media (min-width: 1024px) {
+  .gridBox:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+
+  .gridBox:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  /* Dealing with single orphan */
+  .gridBox:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+/* Adjusting grid for max-width between 768px and 1024px */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr); /* Define a 4-column grid */
+    }
+    
+    .gridBox {
+      grid-column: span 2; /* Each grid box spans 2 columns */
+    }
+  
+    /* Ensure last two items are on the same row */
+    .gridBox:nth-last-child(2):nth-child(4n - 1),
+    .gridBox:last-child:nth-child(4n - 2) {
+      grid-column: span 2;
+    }
+  }
+  .inputField {
+    border: 1px solid #C2C2C2;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  

@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-big-calendar/lib/sass/styles';
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-Light.ttf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-Bold.ttf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-ExtraBold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-ExtraLight.ttf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-Medium.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('/fonts/Manrope-SemiBold.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  @apply box-border font-manrope;
+}
+
+:root {
+  @apply text-[14px] md:text-[16px];
+}
+
+html {
+  font-size: 85% !important;
+}
+
+::-webkit-scrollbar {
+  @apply h-2 w-2;
+
+  &-track {
+    @apply rounded-full bg-brand-neutral;
+  }
+
+  &-thumb {
+    @apply rounded-full bg-brand-royal-blue;
+  }
+}
+
+/* @media (min-width: 1536px) {
+  html {
+    font-size: 0.85vw !important;
+  }
+
+  .container,
+  .max-w-screen-xl {
+    max-width: 80rem;
+  }
+} */
+
+html {
+  @apply overflow-x-hidden font-manrope;
+}
+
+html,
+body {
+  @apply m-0 p-0 font-[MPro] text-[#444444];
+  font-weight: 300;
+}
+
+#tab-group-1 {
+  scroll-margin-top: 240px;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-[Manrope] font-bold;
+}
+
+@layer base {
+  h1 {
+    @apply text-h1 font-semibold text-[#444444];
+  }
+
+  h2 {
+    @apply text-h2 font-medium text-[#444444];
+  }
+
+  h3 {
+    @apply text-h3 text-[#444444];
+  }
+
+  oversized {
+    @apply font-bold;
+  }
+}
+
+.container {
+  @apply mx-auto max-w-screen-xl px-5 lg:px-10;
+}
+
+.button {
+  @apply transition-all font-semibold flex items-center gap-2 py-3 px-6 cursor-pointer text-center w-fit font-[Manrope] text-lg focus:outline-none active:outline-none;
+}
+
+.primary-button {
+  @apply button border border-brand-blue-sky bg-brand-blue-sky text-white hover:bg-brand-blue-sky/90 active:bg-brand-blue-sky/90 rounded-lg hover:gap-4;
+}
+
+.primary-outline-button {
+  @apply primary-button !bg-transparent !border !border-white !text-white hover:!bg-brand-blue-sky hover:!border-brand-blue-sky hover:!text-white;
+}
+
+.secondary-button {
+  @apply button bg-brand-teal text-white hover:bg-brand-teal/90 active:bg-brand-teal/90 rounded-lg hover:gap-4;
+}
+
+.secondary-outline-button {
+  @apply button bg-transparent border border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-white rounded-lg;
+}
+
+.teal-right-arrow-button {
+  @apply button border border-brand-teal bg-brand-teal text-white hover:bg-brand-teal/90 active:bg-brand-teal/90 rounded-lg hover:gap-4;
+}
+
+.green-right-arrow-button {
+  @apply button bg-brand-green text-white hover:bg-brand-green/90 active:bg-brand-green/90 rounded-lg hover:gap-4;
+}
+
+.white-right-arrow-button {
+  @apply button bg-white text-brand-royal-blue hover:bg-white/90 active:bg-white/90 rounded-lg hover:gap-4;
+}
+
+.blue-outline-white-bg-button {
+  @apply primary-button !bg-transparent !border !border-brand-blue-sky !text-brand-blue-sky hover:!bg-brand-blue-sky hover:!border-brand-blue-sky hover:!text-white;
+}
+
+.blue-outline-arrow-right-button {
+  @apply primary-button !bg-transparent !border !border-brand-blue-sky !text-brand-blue-sky;
+}
+
+.blue-sky-right-arrow-button {
+  @apply button border border-brand-teal bg-brand-blue-sky text-white hover:bg-brand-teal/90 active:bg-brand-teal/90 rounded-lg hover:gap-4;
+}
+.green-outline-right-arrow-button {
+  @apply button border border-brand-green !bg-transparent text-brand-green hover:bg-brand-green/90 active:bg-brand-green/90 rounded-lg hover:gap-4;
+}
+
+.homePageSlider .slick-track {
+  display: flex !important;
+}
+.homePageSlider .slick-track .slick-slide {
+  min-height: inherit !important;
+  height: auto;
+}
+.homePageSlider .slick-track .slick-slide div:first-child {
+  height: 100%;
+}
+
+.eventsSliderContainer .slick-track {
+  display: flex !important;
+}
+
+.action-group-events .slick-track {
+  width: 100% !important;
+}
+
+.eventsSliderContainer .slick-track .slick-slide {
+  min-height: inherit !important;
+  height: auto !important;
+}
+.eventsSliderContainer .slick-track .slick-slide > div {
+  height: 100%;
+}
+
+/* global search  pagination*/
+.global-search-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  li {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-width: 0.094rem;
+    border-radius: 0.25rem;
+    border-color: #e7ebef;
+    padding: 0.25rem;
+
+    a {
+      color: #4e5656;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.5rem;
+    }
+
+    &.disabled {
+      background-color: #e7ebef !important;
+    }
+
+    &.selected {
+      border-color: #2daaa5;
+
+      a {
+        color: #2daaa5 !important;
+      }
+    }
+
+    &.previous,
+    &.next {
+      content: '';
+      background-position: center;
+      height: 2rem;
+      width: 2rem;
+      color: transparent;
+
+      &.previous {
+        background: url('/images/left-1.svg');
+      }
+
+      &.next {
+        background: url('/images/left.svg');
+      }
+    }
+  }
+}
+
+.newsSliderContainer .slick-track {
+  display: flex !important;
+}
+.newsSliderContainer .slick-track .slick-slide {
+  min-height: inherit !important;
+  height: auto !important;
+}
+
+.newsSliderContainer .slick-track .slick-slide > div {
+  height: 100%;
+}
+
+.successStorySlider .slick-track {
+  display: flex !important;
+}
+.successStorySlider .slick-track .slick-slide {
+  min-height: inherit !important;
+  height: auto !important;
+}
+.successStorySlider .slick-track .slick-slide > :first-child {
+  height: 100%;
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+html .dark-block-renderer {
+  * {
+    @apply text-white;
+  }
+  p {
+    strong {
+      color: white !important;
+    }
+  }
+  strong {
+    color: white !important;
+  }
+  .container {
+    @apply p-0;
+  }
+
+  a {
+    &:has(> strong) {
+      @apply text-white;
+    }
+  }
+}
+
+.rbc-toolbar-label {
+  color: #173d7b !important;
+  font-size: 2rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 500 !important;
+}
+
+.bottom-panel-image {
+  @media (min-width: 768px) {
+    clip-path: circle(81% at 37% 64%);
+  }
+}
+
+[data-testid="news-slider"] + [data-testid="success-stories-slider"] > div > div {
+  @apply hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

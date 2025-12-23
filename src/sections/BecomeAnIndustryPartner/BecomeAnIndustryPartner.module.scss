@@ -1,0 +1,25 @@
+.list ul {
+  margin-bottom: 0 !important;
+}
+
+.list ul li {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: normal;
+  margin-bottom: 0.894rem;
+  padding-left: 0 !important;
+  margin-left: 0.25rem;
+  position: relative;
+}
+
+.list ul li::before {
+  content: '';
+  display: inline-block;
+  width: 1.043rem;
+  height: 1.188rem;
+  background-image: url('https://nrwib-health.3lanemarketing.com/wp-content/uploads/2024/08/Vector.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -1.5rem;
+}

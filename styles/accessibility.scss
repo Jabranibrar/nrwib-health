@@ -1,0 +1,127 @@
+//Accessibility classes
+.accessibility-color-contrast {
+  .bg-brand-darker {
+    background-color: #181818 !important;
+  }
+
+  .bg-brand-royal-blue {
+    background-color: #103064 !important;
+  }
+
+  .bg-brand-teal {
+    background-color: #1c8398 !important;
+  }
+
+  .bg-brand-warning {
+    background-color: #a70000 !important;
+  }
+
+  .bg-brand-blue {
+    background-color: #6095b8 !important;
+  }
+
+  .bg-brand-saffron {
+    background-color: #c29c33 !important;
+  }
+
+  .bg-brand-green {
+    background-color: #99ac41 !important;
+  }
+
+  .bg-brand-neutral {
+    background-color: #cecdcd !important;
+  }
+
+  .bg-brand-neutral-2 {
+    background-color: #b3c3ce !important;
+  }
+
+  .bg-brand-neutral-3 {
+    background-color: #b3b3b3 !important;
+  }
+
+  .bg-brand-neutral-5 {
+    background-color: #bebcc2 !important;
+  }
+
+  .bg-brand-neutral-6 {
+    background-color: #acabab !important;
+  }
+
+  .bg-brand-neutral-7 {
+    background-color: #bdbdbd !important;
+  }
+
+  .bg-brand-blue-sky {
+    background-color: #217ebb !important;
+  }
+
+  .bg-brand-dark-grey {
+    background-color: #4f4f4f !important;
+  }
+
+  .bg-brand-dark-grey-1 {
+    background-color: #4f4e4e !important;
+  }
+
+  .bg-brand-grey-dark {
+    background-color: #4f4f4f !important;
+  }
+
+  .bg-brand-black-200 {
+    background-color: #4f4f4f !important;
+  }
+
+  .bg-brand-orange {
+    background-color: #dc820c !important;
+  }
+
+  .bg-brand-blue-hover {
+    background-color: #3398ac !important;
+  }
+
+  .bg-brand-green-hover {
+    background-color: #a7b664 !important;
+  }
+}
+
+.accessibility-highlight-links {
+  a,
+  button {
+    background: #464646 !important;
+    color: #fff !important;
+  }
+}
+
+.accessibility-letter-spacing {
+  &-1 {
+    * {
+      letter-spacing: 0.06em !important;
+    }
+  }
+
+  &-2 {
+    * {
+      letter-spacing: 0.12em !important;
+    }
+  }
+}
+
+.accessibility-cursor-size {
+  &-1 {
+    * {
+      cursor: url('/images/cursor-1.png'), default !important;
+    }
+  }
+
+  &-2 {
+    * {
+      cursor: url('/images/cursor-2.png'), default !important;
+    }
+  }
+}
+
+.accessibility-pause-animations * {
+  transition: none !important;
+  animation: none !important;
+}

@@ -1,0 +1,29 @@
+.LiMarker {
+  li::marker {
+      color: #0082C8 !important;
+    }
+ }
+ .SliderContainer {
+
+
+}
+.galleryContainer {
+  @media (max-width: 440px) {
+    max-width: 26.5rem;
+  }
+  @media (min-width: 441px) and (max-width: 500px) {
+    max-width: 30rem;
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    max-width: 33rem;
+  }
+  @media (min-width: 601px) and (max-width: 639px) {
+    max-width: 36rem;
+  }
+  @media (min-width: 640px) and (max-width:680px) {
+    max-width: 45rem;
+  }
+  @media (min-width: 681px) {
+    max-width: 49.5rem;
+  }
+}

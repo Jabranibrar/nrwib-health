@@ -1,0 +1,94 @@
+// @import 'react-big-calendar/lib/sass/styles';
+
+.customCalendar {
+  :global(.rbc-month-view) {
+    @apply border-brand-neutral-6;
+  }
+
+  :global(.rbc-month-row) {
+    @apply border-brand-neutral-6 min-h-[230px];
+  }
+
+  :global(.rbc-day-bg) {
+    @apply border-brand-neutral-6;
+  }
+
+  :global(.rbc-today) {
+    @apply bg-transparent;
+  }
+
+  :global(.rbc-off-range-bg) {
+    @apply bg-brand-neutral-5;
+  }
+
+  :global(.rbc-date-cell) {
+    @apply flex items-center justify-end h-14 border-b border-brand-neutral-6 text-lg text-brand-dark-grey font-medium;
+  }
+
+  :global(.rbc-current) {
+    @apply text-white bg-brand-blue-sky;
+  }
+
+  :global(.rbc-row-segment) {
+    @apply py-2.5 px-2;
+  }
+
+  :global(.rbc-row-content-scroll-container) {
+    & > :global(.rbc-row) {
+      &:not(:only-child) {
+        & > :global(.rbc-row-segment) {
+          @apply py-[0.125rem];
+          :global(.rbc-event-content) {
+            & > div {
+              @apply max-h-[2.75rem];
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :global(.rbc-event) {
+    @apply bg-white border-0 shadow-calendar;
+
+    &:focus {
+      outline: none;
+    }
+
+    :global(.rbc-event-content) {
+      @apply overflow-visible lg:overflow-hidden;
+    }
+  }
+
+  :global(.rbc-toolbar) {
+    @apply pt-20 pb-10 mb-4 bg-transparent gap-y-4 lg:flex-nowrap;
+
+    :global(.rbc-toolbar-label) {
+      @apply text-h3 text-brand-black-200 font-semibold w-full lg:w-auto;
+    }
+  }
+
+  :global(.rbc-btn-group) {
+    @apply text-[20px] text-[#5C5D5E];
+
+    button {
+      @apply border-0 bg-brand-neutral py-3.5 w-24 sm:w-32 text-base text-brand-black-200 hover:bg-brand-blue-sky hover:text-white transition-colors;
+
+      &:global(.rbc-active) {
+        @apply bg-brand-blue-sky text-white;
+      }
+    }
+  }
+
+  :global(.rbc-month-header) {
+    @apply bg-brand-teal h-16;
+
+    :global(.rbc-header) {
+      @apply flex items-center justify-center font-semibold text-lg text-white border-0;
+
+      & > span {
+        @apply px-1 text-clip overflow-hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.mainContainer {
+   width: 100%;
+   background-image: url('https://nrwib-health.3lanemarketing.com/wp-content/uploads/2024/08/Rectangle-3972.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.radio {
+   &:checked {
+      accent-color: #646464 !important;
+   }
+}
+
+
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}

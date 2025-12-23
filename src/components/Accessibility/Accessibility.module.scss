@@ -1,0 +1,15 @@
+.label {
+  @apply mb-1 mt-2;
+  line-height: 1.2727;
+}
+
+.colorContrast,
+.highlightLinks,
+.textSize,
+.letterSpacing,
+.pauseAnimations,
+.cursorSize {
+  @apply relative inline-block;
+  width: 30px;
+  height: 30px;
+}

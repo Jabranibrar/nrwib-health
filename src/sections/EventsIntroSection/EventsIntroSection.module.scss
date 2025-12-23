@@ -1,0 +1,8 @@
+.containerMargin{
+  @media (min-width: 1375px) {
+    padding-left: calc(50vw - 620px);
+  }
+  @media (min-width: 1024px) and (max-width: 1374px) {
+    padding-left: 4.5rem;
+  }
+}

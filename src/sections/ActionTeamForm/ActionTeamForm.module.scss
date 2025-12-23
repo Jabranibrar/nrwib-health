@@ -1,0 +1,35 @@
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-radio input[type='radio'] {
+  display: none; /* Hide the default radio button */
+}
+
+.radio_mark {
+  width: 20px; /* Size of the custom radio */
+  height: 20px;
+  border: 2px solid teal; /* Teal border color */
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.custom-radio input[type='radio']:checked + .radio-mark {
+  background-color: teal; /* Background color when checked */
+}
+
+.custom-radio input[type='radio']:checked + .radio-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px; /* Inner circle size */
+  height: 10px;
+  border-radius: 50%;
+  background-color: white; /* Inner circle color */
+  transform: translate(-50%, -50%);
+}

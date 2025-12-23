@@ -1,0 +1,35 @@
+.textContainer {
+  left: 2.5rem;
+
+  @media (min-width: 1024px) and (max-width: 1310px) {
+    left: 5.5rem;
+  }
+
+  @media (min-width: 1310px) and (max-width: 1370px) {
+    left: 6.5rem;
+  }
+
+  @media (min-width: 1370px) and (max-width: 1440px) {
+    left: 10rem;
+  }
+
+  @media (min-width: 1440px) and (max-width: 1536px) {
+    left: 13rem;
+  }
+
+  @media (min-width: 1536px) {
+    left: 16rem;
+  }
+}
+
+.colorBoxes {
+  width: 100%;
+
+  @media (min-width: 768px) and (max-width: 2000px) {
+    max-width: 40.2%;
+  }
+
+  @media (min-width: 2000px) {
+    max-width: 46%;
+  }
+}
